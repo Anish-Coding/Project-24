@@ -2,9 +2,7 @@ class Box {
     constructor(x,y) {
 
       var options = {
-          restitution:0.2,
-          friction:1.0,
-          density:1.0
+        isStatic : true
       }
       this.body = Bodies.rectangle(x, y, 20, 100, options);      
       World.add(world, this.body);
